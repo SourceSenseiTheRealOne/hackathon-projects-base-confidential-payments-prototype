@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+.codegraph/
+.hermes/
+runtime/
+playwright-report/
+test-results/
+*.tsbuildinfo
+context/private/
+
+.vercel
+.env*

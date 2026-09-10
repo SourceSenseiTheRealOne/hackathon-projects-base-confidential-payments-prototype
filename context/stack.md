@@ -1,0 +1,5 @@
+# Stack decision
+Official npm metadata queried 2026-09-10: Next.js 16.3.4, React/React DOM 19.3.0, TypeScript 7.0.2, Playwright 1.63.0, self-hosted Inter Variable 5.3.0. pnpm 12.3.4; Node 24.21.0 observed locally. Exact dependency graph in pnpm-lock.yaml.
+Next stable cross-check: https://nextjs.org/blog and https://github.com/vercel/next.js/releases/tag/v16.3.4.
+No microfrontends. Native CSS for this explicitly procedural-art visual brief; no heavy animation/UI library needed. Hero canvas is an isolated client leaf; privacy tabs implement standard keyboard semantics. No image-generation asset needed because reference explicitly requests procedural particles, no photographs.
+Landing has no database, server mutations, identity or wallet connection. Full product keeps the approved Go/Postgres/Clerk/Foundry architecture behind the privacy technical gate. All fonts self-hosted. No analytics, localStorage or sessionStorage. Pilot form is download-only and disabled before hydration; native dialog method prevents fallback network submission.

@@ -1,0 +1,16 @@
+{
+  "kind": "public-read-only-preflight",
+  "chainId": 84532,
+  "blockNumber": "46655150",
+  "factory": "0x6f9a0ECD77C3Dade8Dc14a507cAbABFD746575f8",
+  "underlying": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+  "wrapper": "0x59173d43CCF4F89Db9b9BD14CcDBBF6ef0d4329f",
+  "beacon": "0xf9469c8e50bd8b8b2a764a52a7f9f9feb7d63170",
+  "implementation": "0x32B5E112474E609c885c50a46899B1e771B1A2D2",
+  "executor": "0x4b9911b0191B0b6a6eA8F2Ed562e20Cff5AC8624",
+  "executorBytecodeBytes": 163,
+  "escrowDeployed": false,
+  "livePaymentProof": false,
+  "signerConfigured": false,
+  "note": "No signatures or transactions. This does not pass the escrow payment gate."
+}

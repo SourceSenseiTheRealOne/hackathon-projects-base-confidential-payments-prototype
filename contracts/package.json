@@ -1,0 +1,21 @@
+{
+  "name": "scopeveil-escrow-proof",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/forge.mjs test -v",
+    "build": "node scripts/forge.mjs build",
+    "preflight": "node scripts/preflight.mjs"
+  },
+  "devDependencies": {
+    "@foundry-rs/forge": "1.7.1",
+    "@inco/lightning": "1.0.2",
+    "viem": "2.56.3"
+  },
+  "overrides": {
+    "forge-std": "git+https://github.com/foundry-rs/forge-std.git#2f05b3001ed9d74b171d17eac80b3765ce186a76",
+    "ds-test": "git+https://github.com/dapphub/ds-test.git#e282159d5170298eb2455a6c05280ab5a73a4ef0",
+    "@safe-global/safe-smart-account": "git+https://github.com/safe-global/safe-smart-account.git#dc437e8fba8b4805d76bcbd1c668c9fd3d1e83be"
+  }
+}
