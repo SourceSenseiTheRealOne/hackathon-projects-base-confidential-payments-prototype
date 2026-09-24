@@ -29,5 +29,5 @@ export function buildPilotBrief(input: PilotInput): string {
     throw new Error(
       "Describe your challenge in 10-2000 characters without control characters.",
     );
-  return `SCOPEVEIL PILOT BRIEF\nNot sent to Scopeveil.\n\nAgency: ${input.agency.trim()}\nEmail: ${input.email.trim()}\n\nCurrent workflow challenge:\n${input.challenge.trim()}\n\nPurpose: discovery conversation, not a funded engagement.\nDo not include wallet keys, customer documents or private rates.\n`;
+  return `BASE CONFIDENTIAL PAYMENTS PROTOTYPE\nNot sent. This brief stays on your device.\n\nAgency: ${input.agency.trim()}\nEmail: ${input.email.trim()}\n\nCurrent workflow challenge:\n${input.challenge.trim()}\n\nPurpose: discovery conversation, not a funded engagement.\nDo not include wallet keys, customer documents or private rates.\n`;
 }

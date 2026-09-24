@@ -32,6 +32,7 @@ test("builds an unsent brief from the supplied agency information", () => {
   });
   assert.ok(result.includes("Agency: Studio One"));
   assert.ok(result.includes("Email: owner@example.com"));
-  assert.ok(result.includes("Not sent to Scopeveil."));
+  assert.ok(result.includes("BASE CONFIDENTIAL PAYMENTS PROTOTYPE"));
+  assert.ok(result.includes("Not sent. This brief stays on your device."));
   assert.ok(result.includes("We lose track of scope changes."));
 });

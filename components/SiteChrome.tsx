@@ -1,13 +1,22 @@
 import Link from "next/link";
 export function Brand() {
   return (
-    <Link className="brand" href="/" aria-label="Scopeveil home">
+    <Link
+      className="brand"
+      href="/"
+      aria-label="Confidential Payments Prototype on Base home"
+    >
       <span className="brand-mark" aria-hidden="true">
         <i />
         <i />
         <i />
       </span>
-      scopeveil
+      <span className="brand-name">
+        confidential
+        <br />
+        payments
+        <small>Base prototype</small>
+      </span>
     </Link>
   );
 }

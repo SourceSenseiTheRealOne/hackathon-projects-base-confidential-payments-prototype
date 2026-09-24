@@ -19,8 +19,8 @@ export default function Product() {
         <aside className="notice">
           <strong>Payments are not enabled.</strong>
           <p>
-            Scopeveil is in development. This page describes intended behavior,
-            not a live escrow service. No customer funds are accepted.
+            This prototype is in development. This page describes intended
+            behavior, not a live escrow service. No customer funds are accepted.
           </p>
         </aside>
         <section>

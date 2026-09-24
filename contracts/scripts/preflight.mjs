@@ -19,6 +19,6 @@ const implementation=await client.readContract({address:beacon,abi:parseAbi(['fu
 const executor='0x4b9911b0191B0b6a6eA8F2Ed562e20Cff5AC8624';
 const code=await client.getCode({address:executor,blockNumber});
 if(!code || code==='0x')throw new Error('No executor bytecode');
-console.log(JSON.stringify({kind:'public-read-only-preflight',chainId,blockNumber:blockNumber.toString(),factory,underlying,wrapper,beacon,implementation,executor,executorBytecodeBytes:(code.length-2)/2,escrowDeployed:false,livePaymentProof:false,signerConfigured:Boolean(process.env.SCOPEVEIL_TESTNET_PRIVATE_KEY),note:'No signatures or transactions. This does not pass the escrow payment gate.'},null,2));
+console.log(JSON.stringify({kind:'public-read-only-preflight',chainId,blockNumber:blockNumber.toString(),factory,underlying,wrapper,beacon,implementation,executor,executorBytecodeBytes:(code.length-2)/2,escrowDeployed:false,livePaymentProof:false,signerConfigured:Boolean(process.env.BASE_PAYMENTS_TESTNET_PRIVATE_KEY),note:'No signatures or transactions. This does not pass the escrow payment gate.'},null,2));
 }
 await main().catch(()=>{console.error('Preflight failed. Verify Base Sepolia network, RPC availability and expected deployment. No transaction was sent.');process.exitCode=1;});

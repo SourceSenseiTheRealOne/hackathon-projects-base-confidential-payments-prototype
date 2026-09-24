@@ -22,7 +22,7 @@ export function PilotBrief() {
       );
       const anchor = document.createElement("a");
       anchor.href = url;
-      anchor.download = "scopeveil-pilot-brief.txt";
+      anchor.download = "base-confidential-payments-pilot-brief.txt";
       document.body.appendChild(anchor);
       anchor.click();
       anchor.remove();

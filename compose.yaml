@@ -1,7 +1,7 @@
 services:
   landing:
     build: .
-    image: pactrail-launch:local
+    image: base-confidential-payments-prototype:local
     ports:
       - "127.0.0.1:4182:4180"
     read_only: true

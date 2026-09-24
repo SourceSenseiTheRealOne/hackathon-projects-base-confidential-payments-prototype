@@ -252,6 +252,18 @@ textarea:focus-visible {
   align-items: center;
   gap: 12px;
 }
+.brand-name {
+  font-size: 16px;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+.brand-name small {
+  display: block;
+  margin-top: 5px;
+  font-size: 9px;
+  letter-spacing: 0.4px;
+  color: var(--muted);
+}
 .brand-mark {
   width: 27px;
   height: 27px;

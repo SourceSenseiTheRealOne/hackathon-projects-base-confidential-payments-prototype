@@ -43,8 +43,8 @@ export default function Home() {
               funding. Contractors need to know what they’re owed.
             </p>
             <p className="muted">
-              Scopeveil brings those commitments into one agreement, without
-              turning your commercial terms into public information.
+              The proposed workflow brings those commitments into one agreement,
+              without turning your commercial terms into public information.
             </p>
           </div>
         </section>
@@ -74,7 +74,7 @@ export default function Home() {
               <p className="muted small">
                 An example, not a funded agreement.
                 <br />
-                Scopeveil is in development.
+                This is a concept prototype.
               </p>
               <div className="allocation-art" aria-hidden="true">
                 <div />
