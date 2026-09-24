@@ -1,28 +1,27 @@
 import { test, expect } from "@playwright/test";
 test("decorative canvas has a bounded paint rate", async ({ page }) => {
   await page.addInitScript(() => {
-    const w = window as unknown as { scopeveilPaints: number };
-    w.scopeveilPaints = 0;
+    const w = window as unknown as { paymentPaints: number };
+    w.paymentPaints = 0;
     const original = CanvasRenderingContext2D.prototype.clearRect;
     CanvasRenderingContext2D.prototype.clearRect = function (
       ...args: Parameters<CanvasRenderingContext2D["clearRect"]>
     ) {
-      w.scopeveilPaints++;
+      w.paymentPaints++;
       return original.apply(this, args);
     };
   });
   await page.goto("/");
   await page.locator("canvas").scrollIntoViewIfNeeded();
   await page.waitForFunction(
-    () =>
-      (window as unknown as { scopeveilPaints: number }).scopeveilPaints > 0,
+    () => (window as unknown as { paymentPaints: number }).paymentPaints > 0,
   );
   await page.evaluate(() => {
-    (window as unknown as { scopeveilPaints: number }).scopeveilPaints = 0;
+    (window as unknown as { paymentPaints: number }).paymentPaints = 0;
   });
   await page.waitForTimeout(500);
   const paints = await page.evaluate(
-    () => (window as unknown as { scopeveilPaints: number }).scopeveilPaints,
+    () => (window as unknown as { paymentPaints: number }).paymentPaints,
   );
   expect(paints).toBeGreaterThan(0);
   expect(paints).toBeLessThanOrEqual(12);
@@ -187,12 +186,14 @@ test("pilot brief downloads locally and never submits entered data", async ({
   const downloadEvent = page.waitForEvent("download");
   await page.getByRole("button", { name: "Download pilot brief" }).click();
   const download = await downloadEvent;
-  expect(download.suggestedFilename()).toBe("scopeveil-pilot-brief.txt");
+  expect(download.suggestedFilename()).toBe(
+    "base-confidential-payments-pilot-brief.txt",
+  );
   const path = await download.path();
   expect(path).toBeTruthy();
   const text = await readFile(path!, "utf8");
   expect(text).toContain("Agency: Browser Test Agency");
-  expect(text).toContain("Not sent to Scopeveil.");
+  expect(text).toContain("Not sent. This brief stays on your device.");
   await expect(page.getByRole("status")).toContainText("not sent");
   expect(writes).toEqual([]);
   expect(
@@ -204,6 +205,14 @@ test("landing communicates concept status and offers a real pilot action", async
   page,
 }) => {
   await page.goto("/");
+  await expect(page).toHaveTitle("Confidential Payments Prototype | Base");
+  await expect(
+    page
+      .getByRole("link", {
+        name: "Confidential Payments Prototype on Base home",
+      })
+      .first(),
+  ).toBeVisible();
   await expect(
     page.getByRole("heading", { name: "Start funded. Pay privately." }),
   ).toBeVisible();

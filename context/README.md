@@ -1,9 +1,12 @@
-# Pactrail context
-Independent personal project. Public brand Scopeveil; internal slug/path pactrail. See brand.md. Base-first confidential project payments for agencies and contractors.
-Approved direction: application-first landing and offline application materials; confidential escrow technical gate before payment implementation; complete product is a later delivery track, not a simulated release.
-Design: ../docs/superpowers/specs/2026-09-10-pactrail-design.md
-Execution: ../docs/superpowers/plans/2026-09-10-launch-track.md
-Source discovery: ../docs/research/2026-09-10-opportunity.md
-Current delivery state: ../docs/verification/delivery.md
-Public product answers: ../docs/application/field-ready-answers.md
-Do not infer adoption, investment, audits, deployment or proof from plans.
+# Confidential Payments Prototype on Base
+
+Independent personal project in `hackathon-projects/base/confidential-payments-prototype`. Read [project identity](brand.md), the [public README](../README.md), and [engineering notes](../docs/engineering.md) for current naming and implementation boundaries.
+
+The hosted website is a concept prototype. The Solidity/Inco experiment runs locally and is not wired into the website. The full product remains a separate, unimplemented design. Do not infer adoption, investment, audits, deployment, or payment proof from plans.
+
+Historical records:
+
+- [Original design](../docs/superpowers/specs/2026-09-10-pactrail-design.md)
+- [Launch plan](../docs/superpowers/plans/2026-09-10-launch-track.md)
+- [Initial delivery](../docs/verification/delivery.md)
+- [Unsubmitted application drafts](../docs/application/README.md)

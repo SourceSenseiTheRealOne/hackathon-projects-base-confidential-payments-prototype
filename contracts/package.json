@@ -1,5 +1,5 @@
 {
-  "name": "scopeveil-escrow-proof",
+  "name": "base-confidential-escrow-probe",
   "private": true,
   "version": "0.1.0",
   "type": "module",

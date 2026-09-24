@@ -3,11 +3,11 @@ import "@fontsource-variable/inter";
 import "./globals.css";
 export const metadata: Metadata = {
   title: {
-    default: "Scopeveil | Private project payments",
-    template: "%s | Scopeveil",
+    default: "Confidential Payments Prototype | Base",
+    template: "%s | Confidential Payments Prototype on Base",
   },
   description:
-    "Start funded. Pay privately. Funded milestones, private contractor allocations and paid scope changes for software agencies on Base. In development.",
+    "A concept website and local confidential-escrow experiment for agency payments on Base. Payments are disabled; no escrow is deployed.",
   robots: { index: true, follow: true },
 };
 export default function Layout({

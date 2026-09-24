@@ -1,4 +1,6 @@
-# Verified delivery state
+# Initial delivery state (historical)
+
+This records the original Scopeveil delivery. For the current project identity, setup, and live URL, see [the README](../../README.md). Historical hashes and deployment addresses below describe the original revision.
 
 ## Delivered
 - Public concept landing: https://scopeveil.vercel.app
